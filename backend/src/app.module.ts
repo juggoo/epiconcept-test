@@ -4,6 +4,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import configuration from './config/configuration';
 import { validationSchema } from './config/validation.schema';
 import { NotesModule } from './notes/notes.module';
+import { TenantsModule } from './tenants/tenants.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { NotesModule } from './notes/notes.module';
       inject: [ConfigService],
     }),
     NotesModule,
+    TenantsModule,
   ],
 })
 export class AppModule {}

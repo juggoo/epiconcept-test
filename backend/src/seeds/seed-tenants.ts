@@ -2,7 +2,7 @@ import { config } from 'dotenv';
 import 'reflect-metadata';
 import { DataSource } from 'typeorm';
 import { Note } from '../notes/entities/note.entity';
-import { Tenant } from '../notes/entities/tenant.entity';
+import { Tenant } from '../tenants/entities/tenant.entity';
 
 config();
 
